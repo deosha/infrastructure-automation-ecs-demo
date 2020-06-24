@@ -32,7 +32,7 @@ data "terraform_remote_state" "load-balancers" {
   backend = "s3"
   config = {
     bucket = "state-files-ecs-demo"
-    key    = "prod/alb.tfstate"
+    key    = "prod/int-alb.tfstate"
     region = "ap-south-1"
   }
 }
